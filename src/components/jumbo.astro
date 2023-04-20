@@ -1,0 +1,31 @@
+---
+import Services from "./services.astro";
+---
+
+<section
+  class="bg-center bg-no-repeat bg-[url('/jumbo1.png')] bg-blue-800 bg-blend-multiply rounded-lg overflow-hidden"
+>
+  <div
+    id="shadow"
+    class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-48"
+  >
+    <h1
+      class="text-3xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl"
+    >
+      Pan Forever! Culture Before Self
+    </h1>
+    <p
+      class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+    >
+      At the New World World Steel Orchestra, we believe that music is a valued
+      aspect of the children's learning process.
+    </p>
+  </div>
+</section>
+<Services />
+
+<style>
+  #shadow {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+</style>
