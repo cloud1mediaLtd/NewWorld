@@ -1,16 +1,26 @@
 ---
+import { Image, Picture } from "@astrojs/image/components";
 import Services from "./services.astro";
 ---
 
-<section
-  class="bg-center bg-no-repeat bg-[url('/jumbo1.png')] bg-blue-800 bg-blend-multiply rounded-lg overflow-hidden"
->
+<section class="bg-darkblue rounded-lg overflow-hidden z-10 relative">
+  <Picture
+    src="/jumbo1.png"
+    alt="/class"
+    sizes="(max-width: 1800px) 100vw, 1800px"
+    widths={[200, 400, 800]}
+    aspectRatio="3:2"
+    background="#ffffff"
+    fit="cover"
+    position="center"
+    class="rounded-t-lg opacity-40 absolute"
+  />
   <div
     id="shadow"
-    class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-48"
+    class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-48 relative z-20"
   >
     <h1
-      class="text-3xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl"
+      class="text-3xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl z-20"
     >
       Pan Forever! Culture Before Self
     </h1>

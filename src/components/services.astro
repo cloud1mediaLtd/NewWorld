@@ -1,4 +1,5 @@
 ---
+import { Image, Picture } from "@astrojs/image/components";
 ---
 
 <div class="relative pt-5 z-20">
@@ -7,7 +8,17 @@
       class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     >
       <div class="bg-darkblue rounded-lg">
-        <img class="rounded-t-lg opacity-40" src="/class.png" alt="" />
+        <Picture
+          src="/class.png"
+          alt="/class"
+          sizes="(max-width: 800px) 100vw, 800px"
+          widths={[200, 400, 800]}
+          aspectRatio="3:2"
+          background="#ffffff"
+          fit="cover"
+          position="center"
+          class="rounded-t-lg opacity-70"
+        />
       </div>
       <div class="p-5">
         <a href="/classes">
@@ -45,10 +56,16 @@
       class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     >
       <div class="bg-darkblue rounded-lg">
-        <img
-          class="rounded-t-lg opacity-40"
+        <Picture
           src="illustrationsteelpan.png"
-          alt=""
+          alt="Hiring"
+          sizes="(max-width: 800px) 100vw, 800px"
+          widths={[200, 400, 800]}
+          aspectRatio="3:2"
+          background="#ffffff"
+          fit="cover"
+          position="center"
+          class="rounded-t-lg opacity-70"
         />
       </div>
       <div class="p-5">
@@ -87,7 +104,17 @@
       class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     >
       <div class="bg-darkblue rounded-lg">
-        <img class="rounded-t-lg opacity-40" src="volunteer.png" alt="" />
+        <Picture
+          src="volunteer.png"
+          alt="Volunteer"
+          sizes="(max-width: 800px) 100vw, 800px"
+          widths={[200, 400, 800]}
+          aspectRatio="3:2"
+          background="#ffffff"
+          fit="cover"
+          position="center"
+          class="rounded-t-lg opacity-70"
+        />
       </div>
       <div class="p-5">
         <a href="#">

@@ -1,4 +1,5 @@
 ---
+import { Picture } from "@astrojs/image/components";
 import Container from "../components/container.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -6,11 +7,17 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Hire us">
   <Container>
     <div class="mb-8">
-      <div class="bg-darkblue rounded-lg">
-        <img
-          class="rounded-t-lg opacity-40 h-48 md:h-96 object-cover w-full"
-          src="illustrationsteelpan.png"
-          alt=""
+      <div class="bg-darkblue rounded-lg h-80 md:max-h-92 overflow-hidden">
+        <Picture
+          src="class.png"
+          alt="illustrationsteelpan.png"
+          sizes="(max-width: 1800px) 100vw, 1800px"
+          widths={[200, 400, 800, 1200, 1800]}
+          aspectRatio="16:9"
+          background="#ffffff"
+          fit="cover"
+          position="center"
+          class="rounded-t-lg opacity-70 overflow-hidden"
         />
       </div>
     </div>
