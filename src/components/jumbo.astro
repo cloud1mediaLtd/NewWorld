@@ -4,31 +4,33 @@ import Services from "./services.astro";
 ---
 
 <section class="bg-darkblue rounded-lg overflow-hidden z-10 relative">
-  <Picture
-    src="/jumbo1.png"
-    alt="/class"
-    sizes="(max-width: 1800px) 100vw, 1800px"
-    widths={[200, 400, 800]}
-    aspectRatio="3:2"
-    background="#ffffff"
-    fit="cover"
-    position="center"
-    class="rounded-t-lg opacity-70 absolute"
-  />
-  <div
-    id="shadow"
-    class="px-4 mx-auto max-w-screen-xl text-center py-8 lg:py-48 relative z-20"
-  >
-    <h1
-      class="text-3xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl z-20"
+  <a href="/about">
+    <Picture
+      src="/jumbo1.png"
+      alt="/class"
+      sizes="(max-width: 1800px) 100vw, 1800px"
+      widths={[200, 400, 800]}
+      aspectRatio="3:2"
+      background="#ffffff"
+      fit="cover"
+      position="center"
+      class="rounded-t-lg opacity-70 absolute"
+    />
+    <div
+      id="shadow"
+      class="px-4 mx-auto max-w-screen-xl text-center py-8 lg:py-48 relative z-20"
     >
-      Pan Forever! Culture Before Self
-    </h1>
-    <p class="text-lg font-normal text-gray-50 lg:text-xl sm:px-16 lg:px-48">
-      At the New World World Steel Orchestra, we believe that music is a valued
-      aspect of the children's learning process.
-    </p>
-  </div>
+      <h1
+        class="text-3xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl z-20"
+      >
+        Pan Forever! Culture Before Self
+      </h1>
+      <p class="text-lg font-normal text-gray-50 lg:text-xl sm:px-16 lg:px-48">
+        At the New World World Steel Orchestra, we believe that music is a
+        valued aspect of the children's learning process.
+      </p>
+    </div>
+  </a>
 </section>
 <Services />
 
